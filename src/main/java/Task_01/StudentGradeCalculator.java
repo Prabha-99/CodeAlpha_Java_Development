@@ -8,34 +8,57 @@ public class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // ArrayList to store student grades
-        ArrayList<Integer> grades = new ArrayList<>();
+        boolean exit = false;
+        do {
+            System.out.println();
+            System.out.println("------------------------------------------------------");
+            System.out.println("|       |CodeAlpha| STUDENT MANAGEMENT SYSTEM        |");
+            System.out.println("------------------------------------------------------");
+            System.out.println("|\t1. Enter grades                                  |");
+            System.out.println("|\t2. Exit                                          |");
+            System.out.println("------------------------------------------------------");
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
 
-        // Ask the teacher to enter grades until they're done
-        System.out.println("Enter students' grades (enter -1 to finish):");
-        int grade;
-        while (true) {
-            System.out.print("Enter grade: ");
-            grade = scanner.nextInt();
-            if (grade == -1) {
-                break;
+            switch (choice) {
+                case 1:
+                    enterGradesAndShowResults(scanner);
+                    break;
+                case 2:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please enter 1 or 2.");
             }
+        } while (!exit);
+
+        scanner.close();
+    }
+
+    //Allow to enter grades of 10 students continuously
+    public static void enterGradesAndShowResults(Scanner scanner) {
+        ArrayList<Integer> grades = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter grade for student " + (i + 1) + ": ");
+            int grade = scanner.nextInt();
             grades.add(grade);
         }
 
-        // Calculate average
-        double average = calculateAverage(grades);
-        System.out.println("Average grade: " + average);
+        // Show results immediately after entering grades
+        if (!grades.isEmpty()) {
+            double average = calculateAverage(grades);
+            int highestGrade = findHighestGrade(grades);
+            int lowestGrade = findLowestGrade(grades);
 
-        // Find highest grade
-        int highestGrade = findHighestGrade(grades);
-        System.out.println("Highest grade: " + highestGrade);
-
-        // Find lowest grade
-        int lowestGrade = findLowestGrade(grades);
-        System.out.println("Lowest grade: " + lowestGrade);
-
-        scanner.close();
+            System.out.println();
+            System.out.println("++++++++++++++++++++++++");
+            System.out.println("| Average grade: " + average);
+            System.out.println("| Highest grade: " + highestGrade);
+            System.out.println("| Lowest grade : " + lowestGrade);
+            System.out.println("++++++++++++++++++++++++");
+        } else {
+            System.out.println("No grades entered.");
+        }
     }
 
     // Method to calculate the average grade
