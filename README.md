@@ -8,4 +8,13 @@
 
 ## Banking System
 
-<img src="/src/main/resources/Thumbnails/BS.png " style="pointer-events: none;" />
+<a href="">
+    <img src="/src/main/resources/Thumbnails/BS.png " style="pointer-events: none;" />
+</a>
+
+## Hotel Reservation System
+
+<a href="">
+    <img src="/src/main/resources/Thumbnails/HR.png " style="pointer-events: none;" />
+</a>
+
