@@ -1,1 +1,1 @@
-# CodeAlpha Java_Development <img src="[https://www.vectorlogo.zone/logos/springio/springio-icon.svg](https://media.licdn.com/dms/image/C4D0BAQFVBPbc6-yxoA/company-logo_200_200/0/1677167041761?e=1717027200&v=beta&t=XkamIEKavVQsj5J-LQcbPX-F7t4y5nMlhmxHO_ydEis)https://media.licdn.com/dms/image/C4D0BAQFVBPbc6-yxoA/company-logo_200_200/0/1677167041761?e=1717027200&v=beta&t=XkamIEKavVQsj5J-LQcbPX-F7t4y5nMlhmxHO_ydEis" alt="spring" width="40" height="40"/>
+# CodeAlpha Java_Development <img src="https://www.codealpha.tech/img/codealphalogo.png" alt="logo" width="40" height="40"/>
