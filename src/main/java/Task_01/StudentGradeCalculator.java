@@ -26,6 +26,10 @@ public class StudentGradeCalculator {
                     break;
                 case 2:
                     exit = true;
+                    System.out.println("*************************************************************");
+                    System.out.println("| Thank you for using CodeAlpha Student Management System.  |\n" +
+                            "| See You Again !!!                                         |");
+                    System.out.println("*************************************************************");
                     break;
                 default:
                     System.out.println("Invalid choice. Please enter 1 or 2.");
