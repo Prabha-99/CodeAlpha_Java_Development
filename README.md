@@ -1,1 +1,1 @@
-# CodeAlpha Java_Development <img src="https://www.codealpha.tech/img/codealphalogo.png" alt="logo"/>
+# CodeAlpha Java_Development <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="logo"/>
